@@ -80,8 +80,8 @@ if [[ $inFSDIR != "null" ]] ; then
 fi
 
 # avoid templateflow problems on HPC's running singularity
-mkdir -p templateflow
-export SINGULARITYENV_TEMPLATEFLOW_HOME=$PWD/templateflow
+#mkdir -p templateflow
+#export SINGULARITYENV_TEMPLATEFLOW_HOME=$PWD/templateflow
 
 # set FreeSurfer
 [ -z "$FREESURFER_LICENSE" ] && echo "Please set FREESURFER_LICENSE in .bashrc" && exit 1;
